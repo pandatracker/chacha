@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>China OSINT Challenges</title>
+<meta name="description" content="Small open-source-intelligence puzzles about China: plates, phone numbers, ID numbers, website filings, names and social media.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1><a href="#/"><span class="zh">查</span>China OSINT Challenges</a></h1>
+      <p class="sub">Short investigation puzzles about China — number plates, phone numbers, ID numbers, website filings, names and social media. Find the answer with open sources, then learn the technique.</p>
+    </div>
+    <div class="hdr-actions">
+      <button class="ghost" id="themeBtn" title="Toggle light/dark theme"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;margin-right:4px"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>Theme</button>
+    </div>
+  </header>
+
+  <div class="prog"><span class="count" id="progTxt"></span><div class="prog-track"><div class="prog-bar" id="progBar"></div></div></div>
+
+  <main id="main"></main>
+
+  <footer>
+    Part of the <a href="https://pandatracker.github.io/mingzi/">pandatracker</a> tools · Progress is stored only in your browser ·
+    <button class="ghost" id="resetBtn">Reset progress</button>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="challenges/manifest.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
